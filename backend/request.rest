@@ -1,0 +1,42 @@
+GET http://localhost:5000/users
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJNIEZpa3JpIiwiZW1haWwiOiJmaWtyaUBnbWFpbC5jb20iLCJpYXQiOjE2ODc2NjkzMTcsImV4cCI6MTY4NzY2OTMzMn0.erX-BpF8dqryb_ulhKqgHbxdYtnyLHRGxYktSW2bx1M
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "fikri@gmail.com",
+    "password": "13579"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Raihan Afif",
+    "email": "raihanafif@gmail.com",
+    "password": "28januari",
+    "confPassword": "28januaris"
+}
+
+###
+GET http://localhost:5000/users
+Content-Type: application/json
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "budi@gmail.com",
+    "password": "7890"
+}
